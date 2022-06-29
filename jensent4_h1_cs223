@@ -14,11 +14,11 @@
 #include <stdio.h>  // for printf(), scanf()
 #include <stdlib.h> //for system()
 
-/* this program asks the user for measurements of a triangle, rectangle, circle, and sphere 
+/* this program asks the user for measurements of a triangle, rectangle, circle, and sphere
 and then give the users the area and volume of each */
 
 int main(void) {
-   
+
     printf("Taylor Jensen \n"); //prints my name
 
 //Triangle
@@ -27,21 +27,21 @@ int main(void) {
     scanf("%lf", &triBase);                                      //saves whatever the user inputs as a float for the variable triBase
     printf("What is the height of your triangle? ");
     scanf("%lf", &triHeight);
-    triArea = 0.5 * triBase * triHeight;
+    triArea = 0.5 * triBase * triHeight;                        // calculates the area of the triangle
     printf("The area of your triangle is %0.2f.\n", triArea);   //prints the area of the triangle
                                                                 // "%0.2f" causes the output to print with 2 digits after the decimal point
 
 //Rectangle
-    double rectWidth, rectLength, rectArea;                     
+    double rectWidth, rectLength, rectArea;
     printf("What is the width of your rectangle? ");
     scanf("%lf", &rectWidth);
     printf("What is the length of your rectangle? ");
     scanf("%lf", &rectLength);
     rectArea = rectWidth * rectLength;
-    printf("The area of your rectangle is %0.2f.\n", rectArea); 
+    printf("The area of your rectangle is %0.2f.\n", rectArea);
 
 //Circle
-    double circRadius, circArea;                                
+    double circRadius, circArea;
     double pi = 3.14;
     printf("What is the radius of your circle? ");
     scanf("%lf", &circRadius);
@@ -50,7 +50,7 @@ int main(void) {
     printf("The area of your circle is %0.2f.\n", circArea);
 
 //Sphere
-    double sphereRadius, sphereVolume;                          
+    double sphereRadius, sphereVolume;
     printf("What is the radius of your sphere? ");
     scanf("%lf", &sphereRadius);
     double rCubed = pow(sphereRadius, 3);                        //cubes the radius of the circle
