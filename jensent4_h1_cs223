@@ -11,8 +11,8 @@
  ------------------------------------------------ */
 
 // include files
-#include <stdio.h>  /* for printf(), scanf() */
-#include <stdlib.h> /* for system() */
+#include <stdio.h>  // for printf(), scanf()
+#include <stdlib.h> // for system()
 
 int main(void) {
 
