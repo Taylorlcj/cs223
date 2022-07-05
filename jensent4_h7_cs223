@@ -1,0 +1,14 @@
+/* -----------------------------------------------
+   Submitted By: <Taylor Jensen>
+   Homework Number: <7>
+    Credit to:
+       <Taylor Jensen>
+   Submitted On: <8/4/22>
+
+   By submitting this program with my name,
+   I affirm that the creation and modification
+         of this program is primarily my own work.
+ ------------------------------------------------ */
+// include files
+#include <stdio.h>
+#include <stdlib.h>
