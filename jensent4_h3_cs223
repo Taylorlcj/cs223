@@ -43,72 +43,72 @@ int main(void)
 // functions never print
 double inputDeposit(void)
 {
-    double inputDeposit;
+    double deposit;
     printf("Enter the initial deposit amount: ");
-    scanf("%lf", &inputDeposit);
+    scanf("%lf", &deposit);
     while (1)
     {
-        if (inputDeposit < 1000.00 || inputDeposit > 1000000.00)
+        if (deposit < 1000.00 || deposit > 1000000.00)
         {
             fflush(stdin); // gets rid of the value for scanf
             printf("Please enter a value between 1000.00 and 1000000.00: ");
-            scanf("%lf", &inputDeposit);
+            scanf("%lf", &deposit);
         }
         else
         {
             break;
         }
     }
-    return inputDeposit;
+    return deposit;
 }
 
 double inputPercentage(void)
 {
-    double inputPercentage;
+    double percentage;
     printf("Enter annual percentage Yield: ");
-    scanf("%lf", &inputPercentage);
+    scanf("%lf", &percentage);
     while (1)
     {
-        if (inputPercentage < 1.00|| inputPercentage > 15.00)
+        if (percentage < 1.00|| percentage > 15.00)
         {
             fflush(stdin); // gets rid of the value for scanf
             printf("Please enter a value between 1.00 and 15.00: ");
-            scanf("%lf", &inputPercentage);
+            scanf("%lf", &percentage);
         }
         else
         {
             break;
         }
     }
-    return inputPercentage;
+    return percentage;
 }
 
 int inputMP(void)
 {
-    int inputMP;
+    int MP;
     printf("Enter maturity period (number of months): ");
-    scanf("%d", &inputMP);
+    scanf("%d", &MP);
     while (1)
     {
-        if (inputMP < 12 || inputMP > 360)
+        if (MP < 12 || MP > 360)
         {
             fflush(stdin); // gets rid of the value for scanf
             printf("Please enter a value between 12 and 360: ");
-            scanf("%d", &inputMP);
+            scanf("%d", &MP);
         }
         else
         {
             break;
         }
     }
-    return inputMP;
+    return MP;
 }
 
 double formula(double deposit, double percentage)
 {
-    double formula;
-    formula = deposit + deposit * percentage / 1200;
-    return formula;
+    double fa;
+    fa = deposit + deposit * percentage / 1200;
+    return fa;
 }
 
 void displayTable(double deposit, double percentage, int MP, double fa)
