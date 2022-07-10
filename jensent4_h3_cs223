@@ -3,7 +3,7 @@
    Homework Number: <3>
     Credit to:
        <Taylor Jensen>
-   Submitted On: <7/9/22>
+   Submitted On: <7/10/22>
 
    By submitting this program with my name,
    I affirm that the creation and modification
@@ -27,6 +27,7 @@ void displayTable(double deposit, double percentage, int MP, double fa);
 
 int main(void)
 {
+    printf("Taylor Jensen");
     double deposit; // captures inputDeposit as a variable
     double percentage;
     int MP;
@@ -34,7 +35,7 @@ int main(void)
     deposit = inputDeposit();
     percentage = inputPercentage();
     MP = inputMP();
-    printf("%0.2lf %0.2lf %0.d\n", deposit, percentage, MP);
+    printf("%0.2lf %0.2lf %d\n", deposit, percentage, MP);
     fa = formula(deposit, percentage);
     displayTable(deposit, percentage, MP, fa);
     return 0;
@@ -90,7 +91,7 @@ int inputMP(void)
     scanf("%d", &MP);
     while (1)
     {
-        if (MP < 12 || MP > 360)
+        if ( MP < 12 || MP > 360)
         {
             fflush(stdin); // gets rid of the value for scanf
             printf("Please enter a value between 12 and 360: ");
@@ -123,4 +124,6 @@ void displayTable(double deposit, double percentage, int MP, double fa)
         fa = fa + fa * percentage / 1200; // turns the previous Deposit into the most recent formula calculation
     }
 }
+
+
 
