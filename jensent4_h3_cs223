@@ -113,16 +113,14 @@ double formula(double deposit, double percentage)
 
 void displayTable(double deposit, double percentage, int MP, double fa)
 {
-    printf("Initial Deposit = %0.2lf    ", deposit);
-    printf("Yield = %0.2lf    ", percentage);
+    printf("Initial Deposit = $%0.2lf    ", deposit);
+    printf("Yield = %0.2lf%%    ", percentage);
     printf("Period %d Months\n", MP);
     printf("Month       CD Value\n");
     for (int i=1; i<MP + 1; ++i)
     {
         printf("%d          %0.2lf\n",i,fa);
-        fa = fa + fa * percentage / 1200;
+        fa = fa + fa * percentage / 1200; // turns the previous Deposit into the most recent formula calculation
     }
 }
-
-
 
