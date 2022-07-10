@@ -27,7 +27,7 @@ void displayTable(double deposit, double percentage, int MP, double fa);
 
 int main(void)
 {
-    printf("Taylor Jensen");
+    printf("Taylor Jensen\n");
     double deposit; // captures inputDeposit as a variable
     double percentage;
     int MP;
@@ -35,7 +35,6 @@ int main(void)
     deposit = inputDeposit();
     percentage = inputPercentage();
     MP = inputMP();
-    printf("%0.2lf %0.2lf %d\n", deposit, percentage, MP);
     fa = formula(deposit, percentage);
     displayTable(deposit, percentage, MP, fa);
     return 0;
@@ -114,10 +113,10 @@ double formula(double deposit, double percentage)
 
 void displayTable(double deposit, double percentage, int MP, double fa)
 {
-    printf("Initial Deposit = $%0.2lf    ", deposit);
+    printf("\nInitial Deposit = $%0.2lf    ", deposit);
     printf("Yield = %0.2lf%%    ", percentage);
     printf("Period %d Months\n", MP);
-    printf("Month       CD Value\n");
+    printf("\nMonth       CD Value\n");
     for (int i=1; i<MP + 1; ++i)
     {
         printf("%d          %0.2lf\n",i,fa);
