@@ -13,11 +13,11 @@
 #include <stdio.h>
 #include <string.h>
 
-// creating a function
+// counts the amount of 'E's and 'e' in the string
 int countChar(char s[],int length)
 {
-    int x;
-    for(int i; i<length; i++)
+    int x,i;
+    for(i; i<length; i++)
     {
         if(s[i] == 'e' || s[i] == 'E')
         {
@@ -35,22 +35,23 @@ int main()
     printf("Enter the secret password: ");
     gets(password); // takes the password
 
-    // continue asking until user enters valid code
+    // continue asking until user enters valid password
     while(strcmp(password,"space") != 0 )
     {
         printf("Wrong code! Enter again: ");
         gets(password);
     }
-    printf("Enter a string less than 30 chars\n");
+    printf("Enter a string less than 30 characters\n");
     gets(str);
     int len = strlen(str); //finds the length of the string
     if (len>30 || len<1) // makes sure string length is correct
     {
-        printf("\nString must be less than 30 chars and above 0 characters!\n");
+        printf("\nString must be less than 30 characters and above 0 characters!\n");
     }
     else
     {
         int count = countChar(str,len);
+        printf("The length of your string: %d\n",len);
         printf("Your string: %s\n",str);
         printf("The letter 'E' or 'e' appeared %d times\n",count);
     }
