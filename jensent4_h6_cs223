@@ -16,7 +16,7 @@
 // creating a function
 int countChar(char s[],int length)
 {
-    int x, i = 0;
+    int x;
     for(int i; i<length; i++)
     {
         if(s[i] == 'e' || s[i] == 'E')
@@ -31,8 +31,6 @@ int main()
 {
     char password[50] = "\0";
     char str[50] = "\0";
-    char * ptr = NULL;
-    int temp;
     printf("Taylor Jensen\n");
     printf("Enter the secret password: ");
     gets(password); // takes the password
@@ -46,8 +44,6 @@ int main()
     printf("Enter a string less than 30 chars\n");
     gets(str);
     int len = strlen(str); //finds the length of the string
-
-
     if (len>30) // makes sure string length is correct
     {
         printf("\nString must be less than 30 chars!\n");
@@ -55,7 +51,6 @@ int main()
     else
     {
         int count = countChar(str,len);
-        printf("Your string was %d character long\n",len);
         printf("Your string: %s\n",str);
         printf("The letter 'E' or 'e' appeared %d times\n",count);
     }
