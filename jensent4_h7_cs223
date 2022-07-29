@@ -17,9 +17,19 @@
 
 int main()
 {
-    FILE *f1,*f2;
+    FILE* f1;
+    FILE* f2;
+    char c;
     f1 = fopen("location.txt","r"); // opening file in read mode
-    f2 = fopen("distance.txt","w"); // opening file in write mode
+    if (NULL == f1)
+    {
+        printf("file can't be opened \n");
+    }
+    f2 = fopen("distance.txt","w+"); // opening file in write mode
+    if (NULL == f2)
+    {
+        printf("file can't be opened \n");
+    }
 
     // writing header in distance.txt file
     fprintf(f2,"%s","Name");
@@ -55,7 +65,17 @@ int main()
           // writing data to distance.txt file
           fprintf(f2,"%s",name);
           fprintf(f2,"%s","   ");
-
           fprintf(f2,"%.2lf",dis);
     }
+    do {
+        c = fgetc(f2);
+        printf("%c", c);
+
+        // Checking if character is not EOF.
+        // If it is EOF stop reading.
+    } while (c!= EOF);
+
+    // Closing the file
+    fclose(f1);
+    fclose(f2);
 }
