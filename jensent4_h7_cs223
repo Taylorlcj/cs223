@@ -67,6 +67,12 @@ int main()
           fprintf(f2,"%s","   ");
           fprintf(f2,"%.2lf",dis);
     }
+    fclose(f2);
+    if (NULL == f2)
+    {
+        printf("file can't be opened \n");
+    }
+    f2 = fopen("distance.txt","r");
     do {
         c = fgetc(f2);
         printf("%c", c);
@@ -74,8 +80,7 @@ int main()
         // Checking if character is not EOF.
         // If it is EOF stop reading.
     } while (c!= EOF);
-
-    // Closing the file
+    // Closing the files
     fclose(f1);
     fclose(f2);
 }
