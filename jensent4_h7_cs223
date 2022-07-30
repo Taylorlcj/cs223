@@ -49,13 +49,13 @@ int main()
           while(word!=NULL)  // assigning values to x ,y and z
           {
               if(flag==0)
-              strcpy(name,word);
+                strcpy(name,word);
               else if(flag==1)
-              x = atoi(word);
+                x = atoi(word);
               else if(flag==2)
-              y = atoi(word);
+                y = atoi(word);
               else if(flag==3)
-              z = atoi(word);
+                z = atoi(word);
 
               word = strtok(NULL," \n");
               flag++;
