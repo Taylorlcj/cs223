@@ -64,9 +64,7 @@ int main()
           double dis = sqrt(x*x + y*y + z*z);
 
           // writing data to distance.txt file
-          fprintf(f2,"%s",name);
-          fprintf(f2,"%s","   ");
-          fprintf(f2,"%.2lf",dis);
+          fprintf(f2,"   %.2lf",dis);
     }
     fclose(f1);
     fclose(f2);
