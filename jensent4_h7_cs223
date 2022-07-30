@@ -81,6 +81,7 @@ int main()
     {
         printf("file can't be opened \n");
     }
+
     do {
         c = fgetc(f1);
         printf("%c", c);
@@ -88,6 +89,9 @@ int main()
         // Checking if character is not EOF.
         // If it is EOF stop reading.
     } while (c!= EOF);
+
+    printf("\n");
+
     do {
         z = fgetc(f2);
         printf("%c", z);
