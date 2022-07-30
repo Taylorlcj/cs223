@@ -46,6 +46,9 @@ int main()
     while(fgets(line,100,f1)) // reading file by line
     {
         int x,y,z;
+        char *word  = strtok(line," \n"); // strtok to seperate out the words from line
+        char name[100];
+        int flag=0;
           while(word!=NULL)  // assigning values to x ,y and z
           {
               if(flag==0)
