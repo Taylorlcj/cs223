@@ -38,7 +38,7 @@ int main()
     fprintf(f2,"%s","Distance");
     fprintf(f2,"%c",'\n'); // printing new line
 
-    printf("Name\t\tX\tY\tZ\tDistance\n");
+    printf("Name    X    Y    Z   Distance\n");
     char line[100]; // char array to store line of location .tx file
     while(fgets(line,100,f1)) // reading file by line
     {
