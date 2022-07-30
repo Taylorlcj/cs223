@@ -21,7 +21,11 @@ int main()
     FILE* f2;
     char c;
     char z;
+    char line[100]; // char array to store line of location .tx file
     f1 = fopen("location.txt","r"); // opening file in read mode
+    char *word  = strtok(line," \n"); // strtok to seperate out the words from line
+    char name[100];
+    int flag=0;
     if (NULL == f1)
     {
         printf("file can't be opened \n");
@@ -39,13 +43,9 @@ int main()
     fprintf(f2,"%c",'\n'); // printing new line
 
     printf("Name    X    Y    Z   Distance\n");
-    char line[100]; // char array to store line of location .tx file
     while(fgets(line,100,f1)) // reading file by line
     {
-          char *word  = strtok(line," \n"); // strtok to seperate out the words from line
-          int x,y,z;
-          char name[100];
-          int flag=0;
+        int x,y,z;
           while(word!=NULL)  // assigning values to x ,y and z
           {
               if(flag==0)
