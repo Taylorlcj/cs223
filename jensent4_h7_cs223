@@ -31,8 +31,6 @@ int main()
     char z;
     char line[100]; // char array to store line of location .tx file
     f1 = fopen("location.txt","r"); // opening file in read mode
-    char name[100];
-    int flag=0;
     if (NULL == f1)
     {
         printf("file can't be opened \n");
