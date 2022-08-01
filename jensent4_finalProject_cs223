@@ -12,3 +12,9 @@
 // include files
 #include <stdio.h>
 #include <stdlib.h>
+
+int main(void) {
+
+    printf("Taylor Jensen \n"); //prints my name
+    return 0;
+}
