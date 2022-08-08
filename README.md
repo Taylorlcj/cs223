@@ -1,1 +1,1 @@
-# This is for my freshman computer science class at Embry Riddle University
+# This is for my CS223 class
