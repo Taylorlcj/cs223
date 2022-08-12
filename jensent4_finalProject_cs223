@@ -9,10 +9,6 @@
    I affirm that the creation and modification
          of this program is primarily my own work.
  ------------------------------------------------ */
-// include files
-#include <stdio.h>
-#include <stdlib.h>
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -296,3 +292,12 @@ int main()
         printf("Invalid Login Details !!");
         return 0;
     }
+    
+    struct target *targets = generateTargets();
+    
+    //printProjectileMotion(targets);
+    
+    playGame(targets, name);
+
+    return 0;
+}
