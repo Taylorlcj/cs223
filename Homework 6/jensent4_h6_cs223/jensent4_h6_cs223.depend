@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1658804666 source:c:\users\taylo\desktop\cs223\jensent4_h6_cs223\jensent4_h6_cs223.c
+	<stdio.h>
+	<string.h>
+
