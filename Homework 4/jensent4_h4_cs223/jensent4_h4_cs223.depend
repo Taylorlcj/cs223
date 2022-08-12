@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1658354274 source:c:\users\taylo\desktop\cs223\jensent4_h4_cs223\jensent4_h4_cs223.c
+	<stdio.h>
+	<stdbool.h>
+	<math.h>
+
