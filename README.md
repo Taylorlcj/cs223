@@ -1,1 +1,1 @@
-# This is for my CS223 class
+This is my first ever college computer science class and I am just testing out github
