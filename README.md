@@ -1,2 +1,2 @@
-This is my first ever college computer science class and I am just testing out github
+This repo is where I put my C programs for my Freshman Computer Science Course
 Runs on CodeBlocks
